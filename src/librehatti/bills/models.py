@@ -110,4 +110,4 @@ class QuotedOrderNote(models.Model):
     Maps quoted order with note lines.
     """
     quoted_order = models.ForeignKey(QuotedOrder)
-    note = models.CharField(max_length=400)
+    note = models.ForeignKey(NoteLine)
